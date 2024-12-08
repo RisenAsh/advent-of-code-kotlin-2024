@@ -8,6 +8,12 @@ sourceSets {
     }
 }
 
+kotlin {
+    compilerOptions {
+        freeCompilerArgs = listOf("-Xjsr305=strict", "-Werror")
+    }
+}
+
 tasks {
     wrapper {
         gradleVersion = "8.11.1"
